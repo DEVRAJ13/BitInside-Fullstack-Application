@@ -1,0 +1,12 @@
+services:
+  frontend:
+    build:
+      context: ./BitInside-Frontend
+      dockerfile: Dockerfile
+
+    container_name: bitinside-frontend
+
+    restart: unless-stopped
+
+    ports:
+      - "3000:80"
